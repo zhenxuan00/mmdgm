@@ -1,0 +1,1 @@
+THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python svm_cva_mnist.py ./trained_models/cva_mnist/ 3e-4

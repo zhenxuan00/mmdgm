@@ -1,0 +1,1 @@
+THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python cnn_6layer_mnist_50000.py relu 1 3e-4

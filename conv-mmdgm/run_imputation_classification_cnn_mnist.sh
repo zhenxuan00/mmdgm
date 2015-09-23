@@ -1,0 +1,1 @@
+THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python cnn_mnist_imputation.py 3 12 0 ./trained_models/cnn_mnist/

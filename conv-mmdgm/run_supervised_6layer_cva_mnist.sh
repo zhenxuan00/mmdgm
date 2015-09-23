@@ -1,0 +1,1 @@
+THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 learning_rate=3e-4 dropout_flag=1 python cva_6layer_mnist_60000.py

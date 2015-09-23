@@ -1,0 +1,1 @@
+THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 nkerns_1=64 nkerns_2=96 first_drop=1 last_drop=1 opt_med=adam std=1e-1 pattern='hinge' Loss_L=10 python cnn_6layer_svhn.py relu 1 1e-3 2e-6 lcn
