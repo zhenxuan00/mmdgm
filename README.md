@@ -30,6 +30,8 @@ For questions and bug reports, please send me an e-mail at _chongxuanli1991[at]g
 
 3. You may need to resave .sh file in unix format to avoid bugs for strings at the end of a line. Further, you should run the command chmod +x *.sh.
 
+4. I didn't upload our trained model to github and you may need to train models following the command below and put models in the right place. For a full version of code with trained models, you can access http://ml.cs.tsinghua.edu.cn/~chongxuan/static/mmdgm_release.rar.
+
 ## MLP results, code is in folder mlp-mmdgm
 
 0. We did our experiments based on Kingma's code[https://github.com/dpkingma/nips14-ssl]. 
