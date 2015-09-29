@@ -32,16 +32,20 @@ For questions and bug reports, please send me an e-mail at _chongxuanli1991[at]g
 
 ## MLP results, code is in folder mlp-mmdgm
 
-0. We did our experiments based on Kingma's code[https://github.com/dpkingma/nips14-ssl]. 
-You should run this command at first: export ML_DATA_PATH="[dir]/mmdgm/mlp_mmdgm/data"
+```
+# We did our experiments based on Kingma's code[https://github.com/dpkingma/nips14-ssl]. You should run this command at first: 
+export ML_DATA_PATH="[dir]/mmdgm/mlp_mmdgm/data"
 
-1. VA on MNIST with pre-training, lower bound (with visualization): run_va.sh
-You can also train the model without pre-training by setting the [pretrain] flag to 0 in the .sh file.
+# VA on MNIST with pre-training, lower bound (with visualization): 
+run_va.sh
+# You can also train the model without pre-training by setting the [pretrain] flag to 0 in the .sh file.
 
-2. VA on MNIST, error rate: python pegasos.py dir/full_latent.mat mnist
+# VA on MNIST, error rate: 
+python pegasos.py dir/full_latent.mat mnist
 
-3. MMVA on MNIST with pre-training (with visualization): run_mmva.sh
-You can also train the model without pre-training by setting the [pretrain] flag to 0 in the .sh file.
+# MMVA on MNIST with pre-training (with visualization): 
+run_mmva.sh
+# You can also train the model without pre-training by setting the [pretrain] flag to 0 in the .sh file.
 
 4. MSE results with missing value on MNIST (with visualization): 
     - mse_va: python mse_denoising.py models/va_3000/ 3 12 100 _best
@@ -52,7 +56,7 @@ You can also train the model without pre-training by setting the [pretrain] flag
         - random drop: python generate_data_mnist.py 4 0.8 (drop ratio, a real number in range (0, 1))
         - half: python generate_data_mnist.py 5 0 14 (integer less than 28)
     You can also train these models by yourself using 1 and 2 for 3000 epochs and set the [pretrain] flag to 0.
-
+```
 
 ## CNN results on MNIST, code is in folder conv-mmdgm
 
