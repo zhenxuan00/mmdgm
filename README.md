@@ -1,4 +1,4 @@
-Code for NIPS 2015 paper on Max-margin Deep Generative Models(MMDGM)
+Code for NIPS 2015 paper on Max-margin Deep Generative Models (MMDGM)
 
 Chongxuan Li, Jun Zhu, Tianlin Shi and Bo Zhang,
 Max-margin Deep Generative Models 
@@ -26,7 +26,7 @@ For questions and bug reports, please send me an e-mail at _chongxuanli1991[at]g
 
 1. We found that theano is computationally unstable with Cudnn. For MNIST, we do NOT use Cudnn and the error rate should be exact 0.45% with same version of libs and machine. For SVHN, we DO use Cudnn for faster training and there exists additional randomness even given fixed random seed. However, we run this experiments for 5 times and choose the lowest accuracy to report. Typically, the generative results won't change much given different version of libs. 
 
-2. In MLP case, we use code from Kingma. In CNN case, we use code from Goodfellow to do local contrast normalization(LCN) for SVHN data(pylearn2). We also use code from the tutorial on deeplearning.org.
+2. In MLP case, we use code from Kingma. In CNN case, we use code from Goodfellow to do local contrast normalization (LCN) for SVHN data (pylearn2). We also use code from the tutorial on deeplearning.org.
 
 3. I didn't upload our trained model to github and you may need to train models following the command below and put models in the right place. For a full version of code with trained models, you can access http://ml.cs.tsinghua.edu.cn/~chongxuan/static/mmdgm_release.rar.
 
@@ -89,7 +89,9 @@ run_supervised_6layer_cmmva_mnist.sh
 ## CNN results on SVHN
 
 ```
-# The data is too large to upload. Firstly, download the online dataset in .mat format and run preprocessing_svhn.sh to preprocess the data. (This pre-processing procedure should be done WITHOUT Cudnn to obtain a stable version of data.)
+# The data is too large to upload. Firstly, download the online dataset in .mat format and run preprocessing_svhn.sh to preprocess the data.
+
+# This pre-processing procedure should be done WITHOUT Cudnn to obtain a stable version of data.
 
 # CVA on SVHN, lower bound: 
 run_supervised_6layer_cva_svhn.sh
